@@ -1,6 +1,5 @@
-
-import React from 'react';
-import { SafetyTip } from '../types';
+import React from "react";
+import { SafetyTip } from "../types";
 
 interface SafetyTipCardProps {
   tip: SafetyTip | null;
@@ -22,11 +21,11 @@ const SafetyTipCard: React.FC<SafetyTipCardProps> = ({ tip }) => {
           {tip.category}
         </span>
       </div>
-      <p className="text-gray-800 text-lg leading-relaxed">
-        {tip.tip}
-      </p>
+      <p className="text-gray-800 text-lg leading-relaxed">{tip.tip}</p>
       {tip.source && (
-        <p className="text-xs text-gray-400 mt-4 italic">Source: {tip.source}</p>
+        <p className="text-xs text-gray-400 mt-4 italic">
+          Source: {tip.source}
+        </p>
       )}
     </div>
   );
