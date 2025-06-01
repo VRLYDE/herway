@@ -1,4 +1,3 @@
-
 export interface SafetyTip {
   id: number;
   category: string;
